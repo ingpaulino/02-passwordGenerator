@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f6f7;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+
+    background: rgba(73, 155, 234, 1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 233, 1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(73, 155, 234, 1)), color-stop(100%, rgba(32, 124, 233, 1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 233, 1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 233, 1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 233, 1) 100%);
+    background: radial-gradient(ellipse at center, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 233, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#499bea', endColorstr='#207ce9', GradientType=1);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height:580px;
+    margin: 0;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: #f5f6f7;
+    border-radius: 10px;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+    margin: 20px 0;
+}
+
+#title {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.sections-container {
+    width: 90%;
+}
+
+#showPass {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding:10px;
+    border: #818181 1px solid;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #333;
+    border-radius: 10px;
+}
+
+.lenght-input {
+    width: 40%;
+    margin: 30px 0;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#lenght {
+    width: 20%;
+    padding: 10px 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #07722b;
+}
+
+#label-characters {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.check-items {
+    display: block;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.buttons {
+    width: 48%;
+    padding: 10px 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 30px;
+    border: none;
+    transition: 0.3s;
+}
+
+.buttons:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.buttons:active{
+    transform: scale(0.98);
+}
+
+#btn-generatePass {
+    background-color: #07722b;
+    color: #f5f6f7;
+    border: none;
+}
+
+#btn-generatePass:active {
+    background-color: #0b5223;
+}
+
+#btn-copyPass {
+    background-color: #0c55a8;
+    color: #f5f6f7;
+    border: none;
+}
+
+#btn-copyPass:active {
+    background-color: #0d3869;
+}
+
+
+@media screen and (max-width: 600px) {
+    .flex-container {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        background-color: #f5f6f7;
+    }
+
+    #displayPass {
+        margin: 30px 0;
+    }
+
+    #buttons-section {
+        margin-top: 100px;
+        bottom: 0;
+    }
+    
+}

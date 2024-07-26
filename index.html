@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passwordGen</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="flex-container">
+        <img id="logo" src="./img/favicon.png" alt="">
+        <h1 id="title">Generador de contraseñas</h1>
+        <section class="sections-container" id="displayPass">
+            <textarea id="showPass" cols="30" rows="4" readonly disabled schroll="yes"></textarea>
+        </section>
+        <section class="sections-container" id="lenght-section">
+            <label class="lenght-input" for="lenght" unselected>Longitud: </label>
+            <input class="lenght-input" type="number" id="lenght" min="8" max="128" value="16">
+        </section>
+        <section class="sections-container" id="caracters-section">
+            <label id="label-characters" for="check-items" unselected>Incluir:</label>
+            <span class="check-items"><input class="check-characters" type="checkbox" id="characters-upper" checked> A-Z</span>
+            <span class="check-items"><input class="check-characters" type="checkbox" id="characters-lower" checked> a-z</span>
+            <span class="check-items"><input class="check-characters" type="checkbox" id="characters-num"> 0-9</span>
+            <span class="check-items"><input class="check-characters" type="checkbox" id="specials-characters"> Caracteres especiales (!@#$%&*)</span>
+        </section>
+        <section class="sections-container" id="buttons-section">
+            <button class="buttons" id="btn-generatePass" unselected>Generar</button>
+            <button class="buttons" id="btn-copyPass" unselected>Copiar</button>
+        </section>
+    </div>
+
+    <script src="./src/app.js"></script>
+</body>
+</html>
