@@ -1,1 +1,2 @@
-Password generator made with html, css and javascript
+passwordGenerator
+Password generator made with html, css and javascript.
